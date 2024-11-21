@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../public/fonts/Poppins/Poppins-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif; /* Fallback to a system font */
+  background-color: rgb(240, 255, 255,.4);
+}
+.App {
+  text-align: center;
+}

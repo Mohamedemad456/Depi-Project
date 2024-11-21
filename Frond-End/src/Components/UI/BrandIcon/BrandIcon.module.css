@@ -1,0 +1,10 @@
+.brand-icon {
+  padding: 0 5px;
+  background-color: #172b4d;
+  color: white;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}

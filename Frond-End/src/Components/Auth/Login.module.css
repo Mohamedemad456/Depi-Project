@@ -1,0 +1,70 @@
+.login,
+.signup-container {
+  min-height: 560px;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  h4{
+    padding: 1rem 0 .6rem;
+  }
+  .login-form {
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    .form-inpt {
+      height: 38px;
+      text-indent: 5px;
+      font-size: 16px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    .submit-btn {
+    background-color: #0055cc;
+    border: none;
+    color: white;
+    font-size: 16px;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  &:focus {
+    border: 2px solid #0055cc;
+    outline: none;
+  }
+  }
+  img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+  }
+  .signup {
+    color: #0055cc;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.wrong-credentials{
+    width: 100%;
+    background-color: #FFF7D6;
+    padding: 1rem 0;
+    border: 1px solid rgb(255, 167, 167);
+}
+.identical-pass{
+    color: green;
+    display: block;
+}
+.different-pass{
+    color: red;
+    text-align: left;
+    /* display: none; */
+}

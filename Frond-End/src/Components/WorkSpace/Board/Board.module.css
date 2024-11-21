@@ -1,0 +1,144 @@
+.board-container {
+  padding: 2rem;
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+  height: 600px;
+  .task-state-card {
+    width: 22%;
+    min-width: 22%;
+    height: fit-content;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 5px 10px 20px 10px;
+    /*background-color: #f1f2f4;
+    */
+    background-color: rgba(0 0 0 / 0.2);
+    /*color: #172b4d;
+    */
+    color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    .task-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .task {
+        color: black;
+        /* cursor: pointer; */
+        padding: 10px;
+        font-size: 14px;
+        background-color: #ddd;
+        border: 2px solid #cecfcf;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        &:hover {
+          border: 2px solid hsl(215, 100%, 61%);
+        }
+        .control-btns {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .periority {
+            /* background-color: darkcyan; */
+            width: 40px;
+            height: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            &.high {
+              background-color: rgb(255, 52, 52, 0.8);
+            }
+            &.mid {
+              background-color: rgb(56, 139, 255, 0.8);
+            }
+            &.low {
+              background-color: rgb(0, 128, 0, 0.8);
+            }
+          }
+          .edit-icon {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            &:hover {
+              background-color: #ccc;
+              /* opacity: 0.8; */
+            }
+          }
+        }
+      }
+    }
+    .task-header {
+      margin: 0.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      .delete-icon {
+        visibility: hidden;
+        padding: 5px;
+        /* color: red; */
+        font-size: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        &:hover {
+          background-color: rgba(255 255 255 /0.1);
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        .delete-icon {
+          visibility: visible;
+        }
+      }
+    }
+    .add-task-btn {
+      background-color: #2c5364;
+      font-size: 15px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(44, 83, 100, 0.8);
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+  }
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+}

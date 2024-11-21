@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+a {
+  text-decoration: none;
+}
+.existing-acc {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  gap: 2rem;
+  border-top: 1px solid #dce0fa;
+  border-bottom: 1px solid #dce0fa;
+  padding: 1rem 0;
+  &:hover {
+    background-color: #dce0fa;
+  }
+}
+.acc-icon {
+  font-size: 30px;
+}
+.signup {
+  color: #0c66e4;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+}
+
+img {
+  width: 450px;
+}
